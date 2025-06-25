@@ -1,0 +1,308 @@
+:root {
+    --light-blue: #bad4dc;
+    --dark-blue: #15263d;
+    --red: #ee1c25;
+    --grey: #373a37;
+}
+
+html {
+    background-color: var(--light-blue);
+    font-family: 'Alliance', Helvetica, sans-serif;
+    color: var(--dark-blue);
+
+    &.gaslight {
+        background-color: var(--grey);
+    }
+}
+
+/* h1 {
+    color: var(--red);
+    font-family: 'Helvetica Now Display', Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.03em;
+    transform: scaleY(1.4);
+    line-height: 0.8em;
+} */
+
+header {
+    max-width: 1200px;
+    border-bottom: 1px solid var(--red);
+    margin: 0 auto 40px;
+
+    .dates {
+        text-transform: uppercase;
+        padding: 10px 20px;
+        color: var(--red);
+    }
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        color: var(--red);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        display: block;
+    }
+
+    a:hover {
+        color: var(--light-blue);
+        background-color: var(--red);
+    }
+}
+
+.gaslight {
+    color: var(--light-blue);
+
+    header {
+        border-bottom: 1px solid var(--light-blue);
+
+        li {
+            a {
+                color: var(--light-blue);
+            }
+
+            a:hover {
+                color: var(--grey);
+                background-color: var(--light-blue);
+            }
+        }
+    }
+
+    nav ul li a.active {
+        color: var(--grey);
+        background-color: var(--light-blue);
+    }
+}
+
+.ionia {
+    header {
+        border-bottom: 1px solid var(--dark-blue);
+
+        li {
+            a {
+                color: var(--dark-blue);
+
+                &.active {
+                    color: var(--light-blue);
+                    background-color: var(--dark-blue);
+                }
+            }
+
+            a:hover {
+                color: var(--light-blue);
+                background-color: var(--dark-blue);
+            }
+        }
+    }
+}
+
+.gaslight header .dates {
+    color: var(--light-blue);
+}
+
+.ionia header .dates {
+    color: var(--dark-blue);
+}
+
+.hero {
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 40px;
+    margin-bottom: 80px;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.gaslight .hero {
+    border-bottom: 1px solid var(--light-blue);
+}
+
+.ionia .hero {
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+
+.home-content {
+    line-height: 1.5em;
+    max-width: 1000px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    .image-wrapper {
+        max-width: 50%;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h2 {
+        /* font-family: 'Helvetica Now Display', Helvetica, sans-serif; */
+    }
+}
+
+.schedule-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+
+    thead {
+
+    }
+
+    th, td {
+        border: 2px solid var(--dark-blue);
+        padding: 8px;
+    }
+}
+
+.race-overview {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.gaslight {
+    .schedule-table {
+        th, td {
+            border: 2px solid var(--light-blue);
+            padding: 8px;
+        }
+    }
+}
+
+.course-image {
+    display: block;
+    margin: 0 auto 40px;
+    width: 800px;
+    max-width: 100%;
+}
+
+.register-button {
+    /* font-family: 'Helvetica Now Display', Helvetica, sans-serif; */
+    color: var(--red);
+    border: 5px solid var(--red);
+    background: transparent;
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 40px;
+    padding: 20px;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--light-blue);
+        background-color: var(--red);
+    }
+    /* clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%); */
+
+    /* &::before{
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        right: -4px;
+        bottom: -4px;
+        background: white;
+        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        z-index: -1;
+        border-radius: inherit;
+    } */
+}
+
+.gaslight .register-button {
+    color: var(--light-blue);
+    border: 5px solid var(--light-blue);
+
+    &:hover {
+        color: var(--grey);
+        background-color: var(--light-blue);
+    }
+}
+
+.ionia .register-button {
+    color: var(--dark-blue);
+    border: 5px solid var(--dark-blue);
+
+    &:hover {
+        color: var(--light-blue);
+        background-color: var(--dark-blue);
+    }
+}
+
+footer {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    border-top: 1px solid var(--dark-blue);
+    padding: 20px 0;
+
+    div {
+        display: flex;
+        gap: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--dark-blue);
+    }
+}
+
+.gaslight footer {
+    border-top: 1px solid var(--light-blue);
+
+    a {
+        color: var(--light-blue);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-content {
+        display: block;
+    }
+
+    footer {
+        display: block;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
