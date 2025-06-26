@@ -94,15 +94,13 @@ nav {
     header {
         border-bottom: 1px solid var(--light-blue);
 
-        li {
-            a {
-                color: var(--light-blue);
-            }
+        a {
+            color: var(--light-blue);
+        }
 
-            a:hover {
-                color: var(--grey);
-                background-color: var(--light-blue);
-            }
+        a:hover {
+            color: var(--grey);
+            background-color: var(--light-blue);
         }
     }
 
@@ -115,21 +113,19 @@ nav {
 .ionia {
     header {
         border-bottom: 1px solid var(--dark-blue);
+        
+        a {
+            color: var(--dark-blue);
 
-        li {
-            a {
-                color: var(--dark-blue);
-
-                &.active {
-                    color: var(--light-blue);
-                    background-color: var(--dark-blue);
-                }
-            }
-
-            a:hover {
+            &.active {
                 color: var(--light-blue);
                 background-color: var(--dark-blue);
             }
+        }
+
+        a:hover {
+            color: var(--light-blue);
+            background-color: var(--dark-blue);
         }
     }
 }
