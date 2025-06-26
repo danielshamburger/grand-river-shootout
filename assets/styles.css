@@ -168,6 +168,11 @@ h2 {
     line-height: 1.3em;
 }
 
+h3 {
+    font-size: 34px;
+    line-height: 1.3em;
+}
+
 .home-content {
     line-height: 1.5em;
     max-width: 1000px;
