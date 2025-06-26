@@ -164,7 +164,7 @@ section {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 40px;
     line-height: 1.3em;
 }
 
@@ -318,7 +318,6 @@ footer {
     h2 {
         text-align: center;
         margin-bottom: 40px;
-        font-size: 40px;
     }
 
     .partner-logos {
