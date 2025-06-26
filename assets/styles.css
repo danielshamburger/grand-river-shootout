@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Alliance Platt';
+    src: url('assets/Alliance-PlattMedium.woff2') format('woff2'),
+        url('assets/Alliance-PlattMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --light-blue: #bad4dc;
     --dark-blue: #15263d;
@@ -7,7 +16,7 @@
 
 html {
     background-color: var(--light-blue);
-    font-family: 'Alliance', Helvetica, sans-serif;
+    font-family: 'Alliance Platt', Helvetica, sans-serif;
     color: var(--dark-blue);
 
     &.gaslight {
@@ -32,7 +41,7 @@ body {
 header {
     max-width: 1200px;
     border-bottom: 1px solid var(--red);
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
 
     .dates {
         text-transform: uppercase;
@@ -135,7 +144,7 @@ nav {
 
 .hero {
     border-bottom: 1px solid var(--red);
-    padding-bottom: 40px;
+    padding-bottom: 50px;
     margin-bottom: 80px;
 
     img {
@@ -302,9 +311,59 @@ footer {
     }
 }
 
+.partners {
+    border-top: 1px solid var(--dark-blue);
+    padding: 40px 0;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .partner-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        grid-auto-rows: 200px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            max-width: 100%;
+
+            img {
+                height: 100%;
+                width: auto;
+                object-fit: cover;
+                display: block;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    header {
+        margin: 0 auto 30px;
+    }
+
+    .hero {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
     .home-content {
-        display: block;
+        flex-direction: column-reverse;
+
+        .image-wrapper {
+            max-width: 80%;
+        }
+    }
+
+    .register-button {
+        font-size: 30px;
     }
 
     footer {
@@ -326,6 +385,12 @@ footer {
             span {
                 display: block;
             }
+        }
+    }
+
+    .partners {
+        .partner-logos {
+            grid-auto-rows: 50px;
         }
     }
 }
