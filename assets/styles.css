@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Alliance Platt';
-    src: url('assets/Alliance-PlattMedium.woff2') format('woff2'),
-        url('assets/Alliance-PlattMedium.woff') format('woff');
+    src: url('Alliance-PlattMedium.woff2') format('woff2'),
+        url('Alliance-PlattMedium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
