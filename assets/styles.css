@@ -325,6 +325,13 @@ footer {
         margin-bottom: 40px;
     }
 
+    .title-sponsor {
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+
     .partner-logos {
         display: grid;
         grid-template-columns: 1fr 1fr;
