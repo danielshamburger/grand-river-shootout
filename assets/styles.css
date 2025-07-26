@@ -405,3 +405,31 @@ footer {
         }
     }
 }
+
+.lodging {
+    border-top: 1px solid var(--dark-blue);
+    text-align: center;
+
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.button {
+    color: var(--dark-blue);
+    border: 5px solid var(--dark-blue);
+    background: transparent;
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 30px;
+    padding: 15px;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--light-blue);
+        background-color: var(--dark-blue);
+    }
+}
