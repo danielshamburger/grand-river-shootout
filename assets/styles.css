@@ -434,3 +434,8 @@ footer {
         background-color: var(--dark-blue);
     }
 }
+
+.registration {
+    display: flex;
+    gap: 10px;
+}
